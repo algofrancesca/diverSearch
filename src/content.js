@@ -8,7 +8,7 @@ for (var i = 0; i < elements.length; i++) {
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/woman/gi, 'human');
+            var replacedText = text.replace(/woman/gi, 'human'); //TODO: our inclusive language model will go here, to perform the mapping to a more inclusive vocab
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
